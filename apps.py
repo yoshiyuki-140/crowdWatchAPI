@@ -1,3 +1,4 @@
+#coding:utf-8
 
 import cv2 
 import numpy as np 
@@ -57,7 +58,7 @@ class Detector:
                     self.confidences.append(float(confidence))
                     self.boxes.append([x, y, w, h])
 
-    
+
     def checkThePeople(self):
         self.indices = cv2.dnn.NMSBoxes(self.boxes, self.confidences, 0.1, 0.1)
 
@@ -111,3 +112,4 @@ if __name__ == "__main__":
     detector.imwrite("sample.png")
     print(detector.indices)
     print(detector.howManyPeople())
+
