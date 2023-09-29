@@ -22,4 +22,4 @@
 - raspberryPi4 (8GB)
 
 ## Contribution Guide
-- 明日書く
+- また今度書く
